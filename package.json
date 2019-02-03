@@ -1,0 +1,34 @@
+{
+  "name": "objdb",
+  "version": "0.1.0",
+  "description": "Object DB",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha",
+    "testing": "mocha -R dot --watch --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smujmaiku/objdb.git"
+  },
+  "author": "Michael Szmadzinski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smujmaiku/objdb/issues"
+  },
+  "homepage": "https://github.com/smujmaiku/objdb#readme",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "expect": "^24.0.0",
+    "mocha": "^5.2.0"
+  }
+}

@@ -2,6 +2,29 @@ const expect = require('expect');
 const ObjDb = require('../lib/objdb');
 
 describe('ObjDb', function() {
+	describe('isUndefined static', () => {
+		it('should detect undefined types', () => {
+			expect(ObjDb.isUndefined(null)).toBe(true);
+			expect(ObjDb.isUndefined(undefined)).toBe(true);
+			expect(ObjDb.isUndefined()).toBe(true);
+			expect(ObjDb.isUndefined(0)).toBe(false);
+		});
+	});
+
+	describe('isEmpty static', () => {
+		it('should detect undefined types', () => {
+			expect(ObjDb.isEmpty(null)).toBe(true);
+			expect(ObjDb.isEmpty(0)).toBe(false);
+		});
+
+		it('should detect empty Objects', () => {
+			expect(ObjDb.isEmpty({})).toBe(true);
+			expect(ObjDb.isEmpty({ a: 1 })).toBe(false);
+			expect(ObjDb.isEmpty([])).toBe(true);
+			expect(ObjDb.isEmpty([1])).toBe(false);
+		});
+	});
+
 	describe('isEqual static', () => {
 		it('should check types', () => {
 			expect(ObjDb.isEqual(null, 0)).toBe(false);

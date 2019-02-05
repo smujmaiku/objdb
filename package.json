@@ -8,8 +8,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha",
-    "testing": "mocha -R dot --watch --recursive"
+    "test": "jest --coverage",
+    "testing": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,6 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "expect": "^24.0.0",
-    "mocha": "^5.2.0"
+    "jest": "^24.0.0"
   }
 }

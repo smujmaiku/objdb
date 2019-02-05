@@ -1,1 +1,7 @@
-module.exports = require('./lib/objdb');
+module.exports = Object.assign(
+	require('./lib/objdb'),
+	require('./lib/common'),
+	{
+		Emitter: require('./lib/emitter'),
+	}
+);

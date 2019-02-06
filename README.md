@@ -12,7 +12,7 @@ A simple Object database with emitter.
 const db = new ObjDb();
 
 db.set('a.b', 1);
-db.get('a')
+db.get('a');
 // { b: 1 }
 
 db.on('c', console.log);
@@ -70,11 +70,7 @@ set({
 	'a$meta': { p: true },
 	'b.c': 2,
 });
-```
-
-Equals:
-
-```js
+// Is equivalent to:
 set('a', 1, { p: true });
 set('b.c', 2);
 ```

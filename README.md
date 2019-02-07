@@ -1,5 +1,8 @@
 # Object DB
 
+[![build status][travis-image]][travis-url]
+[![coverage status][codecov-image]][codecov-url]
+
 A simple Object database with emitter.
 
 ## Installation
@@ -94,3 +97,8 @@ Providing a path as the `stream` will create the file stream for that path.
 ## License
 
 Copyright (c) 2017-2019, Michael Szmadzinski. (MIT License)
+
+[travis-image]: https://travis-ci.org/smujmaiku/objdb.svg?branch=master
+[travis-url]: https://travis-ci.org/smujmaiku/objdb
+[codecov-image]: https://coveralls.io/repos/github/smujmaiku/objdb/badge.svg
+[codecov-url]: https://coveralls.io/github/smujmaiku/objdb

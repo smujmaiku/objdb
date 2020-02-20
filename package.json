@@ -2,9 +2,9 @@
   "name": "objdb",
   "version": "0.1.0",
   "description": "Object DB",
-  "main": "index.js",
+  "main": "src/objdb.js",
   "directories": {
-    "lib": "lib"
+    "src": "src"
   },
   "scripts": {
     "lint": "eslint .",
